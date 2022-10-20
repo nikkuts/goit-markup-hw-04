@@ -356,6 +356,51 @@ body {
     text-align: center;
 }
 
+/*CLIENTS*/
+
+.clients {
+    background: var(--primary-background-color);
+}
+
+.clients-title {
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-box {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-svg {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+}
+
+.clients-box:hover,
+.clients-box:focus {
+    border: 1px solid var(--accent-color); 
+}
+
+.clients-svg:hover,
+.clients-svg:focus {
+    fill: var(--accent-color);
+}
+
 /*PORTFOLIO*/
 
 .portfolio {
