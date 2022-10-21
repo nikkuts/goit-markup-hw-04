@@ -262,18 +262,13 @@ body {
     margin-right: 30px;
 }
 
-.benefits-before {
+.benefits-box {
     width: 270px;
     height: 120px;
     padding: 25px 100px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
-}
-
-.benefits-svg {
-    width: 70px;
-    height: 70px;
 }
 
 .benefits-title {
@@ -342,7 +337,6 @@ body {
 
 .team-list-title {
     margin-bottom: 10px;
-    
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
@@ -351,9 +345,36 @@ body {
 }
 
 .team-list-text {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
+}
+
+.socialmedia-list {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+}
+
+.socialmedia-box {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: #AFB1B8;
+    border: none;
+    border-radius: 50%; 
+}
+
+.socialmedia-svg {
+    fill: currentColor;
+}
+
+.socialmedia-box:hover,
+.socialmedia-box:focus {
+    color: var(--primary-background-color); 
+    background-color: var(--accent-color);
 }
 
 /*CLIENTS*/
@@ -364,7 +385,6 @@ body {
 
 .clients-title {
     margin-bottom: 50px;
-    
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -381,24 +401,19 @@ body {
     width: 170px;
     height: 92px;
     padding: 16px 32px;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    border-radius: 4px; 
 }
 
 .clients-svg {
-    width: 106px;
-    height: 60px;
-    fill: #afb1b8;
+    fill: currentColor;
 }
 
 .clients-box:hover,
 .clients-box:focus {
+    color: var(--accent-color);
     border: 1px solid var(--accent-color); 
-}
-
-.clients-svg:hover,
-.clients-svg:focus {
-    fill: var(--accent-color);
 }
 
 /*PORTFOLIO*/
