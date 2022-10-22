@@ -80,9 +80,6 @@ body {
 /*HEADER*/
 
 .header {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -152,29 +149,24 @@ body {
     margin-left: auto;
 }
 
-.contacts-list .email {
+.contacts-list .item + .item {
     margin-left: 30px;
 }
 
-.email::before {
-    display: block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/envelope.png);
-    background-size: contain;
-}
-
 .contacts-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+}
+
+.email,
+.tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /*HERO*/
@@ -333,6 +325,7 @@ body {
     background: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    border-top: none;
 }
 
 .team-list-title {
@@ -488,9 +481,15 @@ body {
     flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .portfolio-list .description {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-title {
@@ -540,6 +539,10 @@ body {
     font-size: 26px;
     line-height: calc(31/26);
     color: var(--primary-background-color);
+}
+
+.address-list .item {
+    width: 231px;
 }
 
 .address-list .item:not(:last-child) {
