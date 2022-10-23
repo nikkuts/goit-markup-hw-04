@@ -154,19 +154,22 @@ body {
 }
 
 .contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
 
-.email,
-.tel {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.contacts-svg {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
 }
 
 /*HERO*/
@@ -233,8 +236,7 @@ body {
 
 .hero-btn:hover, 
 .hero-btn:focus {
-    color: var(--accent-color);
-    background: var(--primary-background-color);
+    background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -255,9 +257,11 @@ body {
 }
 
 .benefits-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -350,17 +354,19 @@ body {
     gap: 10px;
 }
 
-.socialmedia-box {
+.socialmedia-link {
+    display: flex;
     width: 44px;
     height: 44px;
-    padding: 12px;
+    align-items: center;
+    justify-content: center;
     color: #AFB1B8;
     border: none;
     border-radius: 50%; 
 }
 
-.socialmedia-box:hover,
-.socialmedia-box:focus {
+.socialmedia-link:hover,
+.socialmedia-link:focus {
     color: var(--primary-background-color); 
     background-color: var(--accent-color);
 }
@@ -394,10 +400,12 @@ body {
     flex-basis: calc((100% - 5 * 30px) / 6);
 }
 
-.clients-box {
+.clients-link {
+    display: flex;
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
@@ -407,8 +415,8 @@ body {
     fill: currentColor;
 }
 
-.clients-box:hover,
-.clients-box:focus {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color); 
 }
@@ -571,18 +579,20 @@ body {
     color: #FFFFFF;
 }
 
-.socialmedia-box-footer {
+.socialmedia-link-footer {
+    display: flex;
     width: 44px;
     height: 44px;
-    padding: 12px;
+    align-items: center;
+    justify-content: center;
     color: var(--primary-background-color);
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50%; 
 }
 
-.socialmedia-box-footer:hover,
-.socialmedia-box-footer:focus {
+.socialmedia-link-footer:hover,
+.socialmedia-link-footer:focus {
     color: var(--primary-background-color); 
     background-color: var(--accent-color);
 }
